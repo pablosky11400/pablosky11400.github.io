@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: iceland;
+}
+.container{
+	max-width:940px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*Navigation CSS */
+#navigation{
+	background-color:#000000;
+	color:#ffffff;
+	position:fixed;
+	left:0px;
+	right:0px;
+	z-index:50;
+	border-bottom:thin solid #2F9C72;
+}
+
+#title{
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#navbar{
+	overflow-y:auto;
+}
+
+#navbar ul{
+	list-style-type:none;
+	width:100%;
+	float:right;
+}
+
+#navbar li a{
+	float:left;
+	width:18%;
+	text-align:center;
+	color:#ffffff;
+	text-decoration:none;
+	padding:1%;
+	border-bottom:medium solid #000000;
+}
+
+#navbar li a:hover{
+	border-bottom: medium solid #C47410;
+}
+
+/*general banner css*/
+.banner{
+	height:800px;
+	background-position:center center;
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.banner .container{
+	position:relative;
+	text-align:center;
+	top:250px;
+}
+
+.banner h1{
+	margin-top:0px;
+	font-size:8em;
+	margin-bottom:10px;
+	letter-spacing:5px;
+	color:#514E4E;
+	text-shadow:3px 3px 3px #ffffff;
+}
+
+.banner p{
+	font-size:1.4em;
+	letter-spacing:2px;
+	color:#000000;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+/*banner css*/
+#banner1 {
+	background-image:url(../images/testbanner.gif);
+	border-top:thin solid #2F9C72;
+	border-bottom:thin solid #2F9C72;
+	
+}
+#banner1 .container{
+	top:80px;
+	
+}
+
+/*text-area css*/
+.text-area{
+	text-align:center;
+	background-color:#000000;
+}
+
+.text-area .container{
+	position:relative;
+}
+
+.text-area h2{
+	color:#ffffff;
+	font-size:3em;
+	margin-bottom:10px;
+	margin-top:0px;
+	padding-top:80px;
+	padding-bottom:41px;
+}
+
+.text-area p{
+	color:#ffffff;
+	font-size:1.5em;
+	margin-bottom:0px;
+	padding-bottom:80px;
+}
+
+/*banner2 css*/
+#banner2{
+	background-image:url(../images/projects.png);
+	border-top:thin solid #2F9C72;
+	border-bottom:thin solid #2F9C72;
+}
+
+/*banner3 css*/
+#banner3{
+	background-image:url(../images/marvel.jpg);
+	border-top:thin solid #2F9C72;
+	border-bottom:thin solid #2F9C72;
+}
+
+/*banner4 css*/
+#banner4{
+	background-image:url(../images/starwars.jpg);
+	border-top:thin solid #2F9C72;
+	border-bottom:thin solid #2F9C72;
+}
+
+/*contacts css*/
+#contacts{
+	height:50px;
+	background-color:#000000;
+	color:#2F9C72;
+	padding-bottom:20px;
+	border-top:thin solid #2F9C72;
+	padding-top:10px;
+}
+
+#contacts .container{
+	position:relative;
+	text-align:center;
+	top:10px;
+}
+.space{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+@media(max-width:768px){
+	#navigation .container{
+		display:flex;
+		flex-direction:column;
+	}
+	#title{
+		display:flex;
+		justify-content:center;
+	}
+	#navbar ul li{
+		display:flex;
+		justify-content:center;
+	}
+	#banner .container{
+		top:300px;
+	}
+	.banner h1{
+		font-size:7em;
+	}
+}
+
+@media(max-width:500px){
+	.banner h1{
+		font-size:4em;
+	}
+	#navbar li a{
+		width:30%;
+	}
+}
